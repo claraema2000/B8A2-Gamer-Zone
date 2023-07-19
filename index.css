@@ -35,11 +35,12 @@ nav{
 /* Main Section */
 /* G.O.A.T. Section */
 .GOAT{
+    margin-top: 100px;
+    background-image: url('images/Group\ 14.png');
+    background-repeat: no-repeat;
     display: flex;
     justify-content: space-around;
-}
-.goat-div{
-    background-image: url('images/Group\ 14.png');
+    align-items: center;
 }
 .first-heading{
     color: #0B0223;
@@ -85,14 +86,18 @@ nav{
     font-size: 18px;
     font-weight: 600;
 }
-.grid-again{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.first-img{
+    width: 700px;
+    height: 665px;
 }
 /* Online Games Section */
+.online-game-detail{
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 100px;
+}
 .primary-title{
     color: #0B0223;
-    /* text-align: right; */
     font-size: 42px;
     font-weight: 700;
 }
@@ -110,11 +115,23 @@ nav{
 }
 .online-game-img{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 /* Play Instantly Section */
-.play-instanty{
-    
+.play-instantly{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.play-img img{
+    margin-left: 50px;
+    height: 100%;
+}
+.talking-angela{
+    position: relative;
+    bottom: 250px;
+    right: 100px;
 }
 /* Responsive for Small Devices */
 @media screen and (max-width:576px) {
@@ -127,8 +144,71 @@ nav{
         flex-direction: column;
         gap: 10px;
     }
+    .GOAT{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+        background-size: 510px 385px;
+    }
+    .first-img{
+        margin-top: 15px;
+        width: 500px;
+        height: 600px;
+    }
+    .first-img img{
+        width: 100%;
+        height: 600px;
+    }
+    .primary-info{
+        padding: 0;
+    }
+    .online-game-img{
+        flex-direction: column;
+        align-items: center;
+    }
+    .play-instantly{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .play-img > img{
+        width: 90%;
+        margin: 0;
+    }
+    .talking-angela{
+        bottom: 150px;
+        right: 120px;
+    }
+    .angela{
+        height: 50%;
+        width: 55%;
+    }
+
 }
 /* Responsive for Medium Devices */
-@media screen and (min-width: 576px) and (max-width: 960px) {
-
+@media screen and (min-width: 576px) and (max-width: 970px) {
+    nav{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .GOAT{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+        background-size: 615px 385px;
+        gap: 10px;
+    }
+    .online-game-img{
+        margin-top: 70px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .play-instantly{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .talking-angela{
+        right: 200px;
+    }
 }
