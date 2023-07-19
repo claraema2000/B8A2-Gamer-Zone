@@ -133,6 +133,66 @@ nav{
     bottom: 250px;
     right: 100px;
 }
+/* Button Section */
+.button-sec{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+.button > button{
+    width: 250px;
+    height: 80px;
+    border-radius: 40px;
+    background: #FFF;
+    border-style: none;
+    text-align:justify;
+}
+.button > button:hover{
+    border:1px solid #F948B2;
+    color:#ff42a5;
+}
+/* Footer Section */
+footer{
+    background: #0B0223;
+    height: 600px;
+    text-align: center;
+    padding-top: 30px;
+}
+.white-text{
+    color: #FFF;
+}
+.links{
+    display: inline-flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.links > li > a{
+    color: #FFF;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.link-img{
+    display: inline-flex;
+    gap: 35px;
+}
+.more-links{
+    display: inline-flex;
+    gap: 50px;
+}
+.more-links > li > a{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.last-line{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
 /* Responsive for Small Devices */
 @media screen and (max-width:576px) {
     nav{
