@@ -195,8 +195,9 @@ nav{
 }
 /* Button Section */
 .flex-btn{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
 }
 .button-sec{
     margin-bottom: 100px;
@@ -306,8 +307,13 @@ footer{
         width: 55%;
     }
     .flex-btn{
-        flex-wrap: wrap;
-        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+    .button > button{
+        width: 180px;
+        height: 80px;
+        text-align: center;
     }
     footer{
         padding-top: 50px;
@@ -325,7 +331,7 @@ footer{
 /* Responsive for Medium Devices */
 @media screen and (min-width: 576px) and (max-width: 970px) {
     nav{
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
     .GOAT{
@@ -366,8 +372,13 @@ footer{
         right: 200px;
     }
     .flex-btn{
-        flex-wrap: wrap;
-        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+    .button > button{
+        width: 190px;
+        height: 80px;
+        text-align: center;
     }
     .footer{
         padding-top: 70px;
